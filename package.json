@@ -1,0 +1,31 @@
+{
+    "name": "cafeteria",
+    "version": "1.0.0",
+    "description": "aprendiendo sass, gulp css grid",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SergioSanchezPerez19/css-cafeteria.git"
+    },
+    "author": "Sergio Sanchez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SergioSanchezPerez19/css-cafeteria/issues"
+    },
+    "homepage": "https://github.com/SergioSanchezPerez19/css-cafeteria#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "gulp": "^4.0.2",
+        "gulp-postcss": "^10.0.0",
+        "gulp-sass": "^5.1.0",
+        "postcss": "^8.4.38",
+        "sass": "^1.72.0"
+    },
+    "browserslist": [
+        "last 1 version",
+        ">1%"
+    ]
+}
