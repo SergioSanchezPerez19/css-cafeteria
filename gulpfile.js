@@ -5,15 +5,18 @@ const autoprefixer = require('autoprefixer');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
 
-function css(done) {
+function css() {
     // compilar sass
     // pasos 1 - identificar archivos, 2 - compilarla, 3 - guardar el .css
 
-    done();
-    src('src/scss/app.scss')
+    return src('src/scss/app.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'expanded' }))
-        .pipe(postcss([autoprefixer()]))
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(sourcemaps.write('.'))
         .pipe(dest('build/css'));
 }
 
