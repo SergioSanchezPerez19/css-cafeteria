@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .contenido-menu {
-    background-image: url(../../../build/img/cafe.avif);
+    background-image: url('../img/cafe.avif');
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 100%;
